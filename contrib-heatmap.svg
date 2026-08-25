@@ -1,0 +1,5334 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+        width="860"
+        height="155"
+        viewBox="0 0 860 155">
+
+        <rect
+            width="100%"
+            height="100%"
+            rx="12"
+            fill="#0d1117"
+        />
+
+        <style>
+            .cell {
+                opacity: 0;
+                animation: reveal 0.45s ease-out forwards;
+            }
+
+            @keyframes reveal {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .text {
+                font-family: Arial, sans-serif;
+                fill: #8b949e;
+            }
+
+            .stat {
+                font-family: "Courier New", monospace;
+                fill: #c9d1d9;
+            }
+        </style>
+        
+
+            <rect
+                class="cell"
+                x="-18.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.000s"
+            >
+                <title>0 contributions on </title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-18.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.020s"
+            >
+                <title>0 contributions on </title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-18.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.040s"
+            >
+                <title>0 contributions on </title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-18.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.060s"
+            >
+                <title>0 contributions on </title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-18.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.080s"
+            >
+                <title>0 contributions on 2025-08-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-18.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.100s"
+            >
+                <title>0 contributions on 2025-08-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-18.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.120s"
+            >
+                <title>0 contributions on 2025-08-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-1.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.035s"
+            >
+                <title>0 contributions on 2025-08-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-1.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.055s"
+            >
+                <title>0 contributions on 2025-08-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-1.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.075s"
+            >
+                <title>0 contributions on 2025-08-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-1.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.095s"
+            >
+                <title>0 contributions on 2025-08-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-1.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.115s"
+            >
+                <title>0 contributions on 2025-08-31</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-1.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.135s"
+            >
+                <title>0 contributions on 2025-09-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="-1.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.155s"
+            >
+                <title>0 contributions on 2025-09-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="15.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.070s"
+            >
+                <title>0 contributions on 2025-09-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="15.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.090s"
+            >
+                <title>0 contributions on 2025-09-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="15.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.110s"
+            >
+                <title>0 contributions on 2025-09-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="15.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.130s"
+            >
+                <title>0 contributions on 2025-09-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="15.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.150s"
+            >
+                <title>0 contributions on 2025-09-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="15.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.170s"
+            >
+                <title>0 contributions on 2025-09-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="15.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.190s"
+            >
+                <title>0 contributions on 2025-09-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="32.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.105s"
+            >
+                <title>0 contributions on 2025-09-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="32.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.125s"
+            >
+                <title>0 contributions on 2025-09-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="32.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.145s"
+            >
+                <title>0 contributions on 2025-09-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="32.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.165s"
+            >
+                <title>0 contributions on 2025-09-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="32.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.185s"
+            >
+                <title>0 contributions on 2025-09-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="32.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.205s"
+            >
+                <title>0 contributions on 2025-09-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="32.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.225s"
+            >
+                <title>0 contributions on 2025-09-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="49.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.140s"
+            >
+                <title>0 contributions on 2025-09-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="49.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.160s"
+            >
+                <title>0 contributions on 2025-09-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="49.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.180s"
+            >
+                <title>0 contributions on 2025-09-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="49.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.200s"
+            >
+                <title>0 contributions on 2025-09-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="49.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.220s"
+            >
+                <title>0 contributions on 2025-09-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="49.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.240s"
+            >
+                <title>0 contributions on 2025-09-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="49.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.260s"
+            >
+                <title>0 contributions on 2025-09-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="66.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.175s"
+            >
+                <title>0 contributions on 2025-09-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="66.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.195s"
+            >
+                <title>0 contributions on 2025-09-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="66.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.215s"
+            >
+                <title>0 contributions on 2025-09-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="66.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.235s"
+            >
+                <title>0 contributions on 2025-09-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="66.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.255s"
+            >
+                <title>0 contributions on 2025-09-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="66.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.275s"
+            >
+                <title>0 contributions on 2025-09-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="66.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.295s"
+            >
+                <title>0 contributions on 2025-09-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="83.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.210s"
+            >
+                <title>0 contributions on 2025-10-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="83.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.230s"
+            >
+                <title>0 contributions on 2025-10-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="83.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.250s"
+            >
+                <title>0 contributions on 2025-10-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="83.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.270s"
+            >
+                <title>0 contributions on 2025-10-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="83.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.290s"
+            >
+                <title>0 contributions on 2025-10-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="83.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.310s"
+            >
+                <title>0 contributions on 2025-10-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="83.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.330s"
+            >
+                <title>0 contributions on 2025-10-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="100.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.245s"
+            >
+                <title>0 contributions on 2025-10-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="100.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.265s"
+            >
+                <title>0 contributions on 2025-10-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="100.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.285s"
+            >
+                <title>0 contributions on 2025-10-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="100.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.305s"
+            >
+                <title>0 contributions on 2025-10-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="100.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.325s"
+            >
+                <title>0 contributions on 2025-10-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="100.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.345s"
+            >
+                <title>0 contributions on 2025-10-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="100.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.365s"
+            >
+                <title>0 contributions on 2025-10-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="117.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.280s"
+            >
+                <title>0 contributions on 2025-10-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="117.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.300s"
+            >
+                <title>0 contributions on 2025-10-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="117.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.320s"
+            >
+                <title>0 contributions on 2025-10-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="117.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.340s"
+            >
+                <title>0 contributions on 2025-10-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="117.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.360s"
+            >
+                <title>0 contributions on 2025-10-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="117.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.380s"
+            >
+                <title>0 contributions on 2025-10-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="117.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.400s"
+            >
+                <title>0 contributions on 2025-10-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="134.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.315s"
+            >
+                <title>0 contributions on 2025-10-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="134.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.335s"
+            >
+                <title>0 contributions on 2025-10-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="134.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.355s"
+            >
+                <title>0 contributions on 2025-10-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="134.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.375s"
+            >
+                <title>0 contributions on 2025-10-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="134.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.395s"
+            >
+                <title>0 contributions on 2025-10-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="134.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.415s"
+            >
+                <title>0 contributions on 2025-10-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="134.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.435s"
+            >
+                <title>0 contributions on 2025-10-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="151.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.350s"
+            >
+                <title>0 contributions on 2025-10-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="151.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.370s"
+            >
+                <title>0 contributions on 2025-10-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="151.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.390s"
+            >
+                <title>0 contributions on 2025-10-31</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="151.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.410s"
+            >
+                <title>0 contributions on 2025-11-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="151.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.430s"
+            >
+                <title>0 contributions on 2025-11-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="151.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.450s"
+            >
+                <title>0 contributions on 2025-11-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="151.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.470s"
+            >
+                <title>0 contributions on 2025-11-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="168.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.385s"
+            >
+                <title>0 contributions on 2025-11-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="168.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.405s"
+            >
+                <title>0 contributions on 2025-11-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="168.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.425s"
+            >
+                <title>0 contributions on 2025-11-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="168.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.445s"
+            >
+                <title>0 contributions on 2025-11-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="168.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.465s"
+            >
+                <title>0 contributions on 2025-11-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="168.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.485s"
+            >
+                <title>0 contributions on 2025-11-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="168.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.505s"
+            >
+                <title>0 contributions on 2025-11-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="185.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.420s"
+            >
+                <title>0 contributions on 2025-11-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="185.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.440s"
+            >
+                <title>0 contributions on 2025-11-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="185.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.460s"
+            >
+                <title>0 contributions on 2025-11-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="185.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.480s"
+            >
+                <title>0 contributions on 2025-11-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="185.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.500s"
+            >
+                <title>0 contributions on 2025-11-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="185.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.520s"
+            >
+                <title>0 contributions on 2025-11-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="185.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.540s"
+            >
+                <title>0 contributions on 2025-11-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="202.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.455s"
+            >
+                <title>0 contributions on 2025-11-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="202.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.475s"
+            >
+                <title>0 contributions on 2025-11-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="202.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.495s"
+            >
+                <title>0 contributions on 2025-11-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="202.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.515s"
+            >
+                <title>0 contributions on 2025-11-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="202.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.535s"
+            >
+                <title>0 contributions on 2025-11-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="202.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.555s"
+            >
+                <title>0 contributions on 2025-11-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="202.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.575s"
+            >
+                <title>0 contributions on 2025-11-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="219.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.490s"
+            >
+                <title>0 contributions on 2025-11-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="219.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.510s"
+            >
+                <title>0 contributions on 2025-11-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="219.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.530s"
+            >
+                <title>0 contributions on 2025-11-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="219.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.550s"
+            >
+                <title>0 contributions on 2025-11-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="219.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.570s"
+            >
+                <title>0 contributions on 2025-11-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="219.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.590s"
+            >
+                <title>0 contributions on 2025-12-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="219.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.610s"
+            >
+                <title>0 contributions on 2025-12-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="236.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.525s"
+            >
+                <title>0 contributions on 2025-12-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="236.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.545s"
+            >
+                <title>0 contributions on 2025-12-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="236.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.565s"
+            >
+                <title>0 contributions on 2025-12-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="236.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.585s"
+            >
+                <title>0 contributions on 2025-12-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="236.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.605s"
+            >
+                <title>0 contributions on 2025-12-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="236.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.625s"
+            >
+                <title>0 contributions on 2025-12-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="236.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.645s"
+            >
+                <title>0 contributions on 2025-12-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="253.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.560s"
+            >
+                <title>0 contributions on 2025-12-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="253.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.580s"
+            >
+                <title>0 contributions on 2025-12-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="253.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.600s"
+            >
+                <title>0 contributions on 2025-12-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="253.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.620s"
+            >
+                <title>0 contributions on 2025-12-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="253.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.640s"
+            >
+                <title>0 contributions on 2025-12-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="253.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.660s"
+            >
+                <title>0 contributions on 2025-12-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="253.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.680s"
+            >
+                <title>0 contributions on 2025-12-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="270.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.595s"
+            >
+                <title>0 contributions on 2025-12-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="270.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.615s"
+            >
+                <title>0 contributions on 2025-12-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="270.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.635s"
+            >
+                <title>0 contributions on 2025-12-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="270.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.655s"
+            >
+                <title>0 contributions on 2025-12-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="270.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.675s"
+            >
+                <title>0 contributions on 2025-12-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="270.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.695s"
+            >
+                <title>0 contributions on 2025-12-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="270.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.715s"
+            >
+                <title>0 contributions on 2025-12-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="287.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.630s"
+            >
+                <title>0 contributions on 2025-12-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="287.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.650s"
+            >
+                <title>0 contributions on 2025-12-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="287.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#006d32"
+                style="animation-delay:0.670s"
+            >
+                <title>0 contributions on 2025-12-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="287.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#006d32"
+                style="animation-delay:0.690s"
+            >
+                <title>0 contributions on 2025-12-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="287.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.710s"
+            >
+                <title>0 contributions on 2025-12-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="287.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.730s"
+            >
+                <title>0 contributions on 2025-12-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="287.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.750s"
+            >
+                <title>0 contributions on 2025-12-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="304.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.665s"
+            >
+                <title>0 contributions on 2025-12-31</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="304.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.685s"
+            >
+                <title>0 contributions on 2026-01-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="304.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.705s"
+            >
+                <title>0 contributions on 2026-01-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="304.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.725s"
+            >
+                <title>0 contributions on 2026-01-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="304.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.745s"
+            >
+                <title>0 contributions on 2026-01-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="304.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.765s"
+            >
+                <title>0 contributions on 2026-01-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="304.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.785s"
+            >
+                <title>0 contributions on 2026-01-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="321.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.700s"
+            >
+                <title>0 contributions on 2026-01-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="321.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.720s"
+            >
+                <title>0 contributions on 2026-01-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="321.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.740s"
+            >
+                <title>0 contributions on 2026-01-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="321.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.760s"
+            >
+                <title>0 contributions on 2026-01-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="321.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.780s"
+            >
+                <title>0 contributions on 2026-01-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="321.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.800s"
+            >
+                <title>0 contributions on 2026-01-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="321.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.820s"
+            >
+                <title>0 contributions on 2026-01-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="338.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.735s"
+            >
+                <title>0 contributions on 2026-01-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="338.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.755s"
+            >
+                <title>0 contributions on 2026-01-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="338.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.775s"
+            >
+                <title>0 contributions on 2026-01-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="338.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.795s"
+            >
+                <title>0 contributions on 2026-01-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="338.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.815s"
+            >
+                <title>0 contributions on 2026-01-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="338.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.835s"
+            >
+                <title>0 contributions on 2026-01-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="338.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.855s"
+            >
+                <title>0 contributions on 2026-01-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="355.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.770s"
+            >
+                <title>0 contributions on 2026-01-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="355.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.790s"
+            >
+                <title>0 contributions on 2026-01-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="355.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.810s"
+            >
+                <title>0 contributions on 2026-01-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="355.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.830s"
+            >
+                <title>0 contributions on 2026-01-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="355.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.850s"
+            >
+                <title>0 contributions on 2026-01-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="355.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.870s"
+            >
+                <title>0 contributions on 2026-01-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="355.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.890s"
+            >
+                <title>0 contributions on 2026-01-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="372.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.805s"
+            >
+                <title>0 contributions on 2026-01-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="372.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.825s"
+            >
+                <title>0 contributions on 2026-01-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="372.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.845s"
+            >
+                <title>0 contributions on 2026-01-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="372.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.865s"
+            >
+                <title>0 contributions on 2026-01-31</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="372.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.885s"
+            >
+                <title>0 contributions on 2026-02-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="372.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.905s"
+            >
+                <title>0 contributions on 2026-02-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="372.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.925s"
+            >
+                <title>0 contributions on 2026-02-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="389.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.840s"
+            >
+                <title>0 contributions on 2026-02-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="389.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.860s"
+            >
+                <title>0 contributions on 2026-02-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="389.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.880s"
+            >
+                <title>0 contributions on 2026-02-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="389.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.900s"
+            >
+                <title>0 contributions on 2026-02-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="389.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.920s"
+            >
+                <title>0 contributions on 2026-02-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="389.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.940s"
+            >
+                <title>0 contributions on 2026-02-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="389.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.960s"
+            >
+                <title>0 contributions on 2026-02-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="406.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.875s"
+            >
+                <title>0 contributions on 2026-02-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="406.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.895s"
+            >
+                <title>0 contributions on 2026-02-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="406.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.915s"
+            >
+                <title>0 contributions on 2026-02-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="406.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.935s"
+            >
+                <title>0 contributions on 2026-02-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="406.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.955s"
+            >
+                <title>0 contributions on 2026-02-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="406.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.975s"
+            >
+                <title>0 contributions on 2026-02-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="406.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.995s"
+            >
+                <title>0 contributions on 2026-02-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="423.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.910s"
+            >
+                <title>0 contributions on 2026-02-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="423.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.930s"
+            >
+                <title>0 contributions on 2026-02-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="423.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.950s"
+            >
+                <title>0 contributions on 2026-02-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="423.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.970s"
+            >
+                <title>0 contributions on 2026-02-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="423.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.990s"
+            >
+                <title>0 contributions on 2026-02-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="423.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.010s"
+            >
+                <title>0 contributions on 2026-02-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="423.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#006d32"
+                style="animation-delay:1.030s"
+            >
+                <title>0 contributions on 2026-02-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="440.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.945s"
+            >
+                <title>0 contributions on 2026-02-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="440.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:0.965s"
+            >
+                <title>0 contributions on 2026-02-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="440.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#006d32"
+                style="animation-delay:0.985s"
+            >
+                <title>0 contributions on 2026-02-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="440.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#39d353"
+                style="animation-delay:1.005s"
+            >
+                <title>0 contributions on 2026-02-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="440.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#26a641"
+                style="animation-delay:1.025s"
+            >
+                <title>0 contributions on 2026-03-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="440.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#006d32"
+                style="animation-delay:1.045s"
+            >
+                <title>0 contributions on 2026-03-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="440.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.065s"
+            >
+                <title>0 contributions on 2026-03-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="457.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:0.980s"
+            >
+                <title>0 contributions on 2026-03-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="457.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.000s"
+            >
+                <title>0 contributions on 2026-03-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="457.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.020s"
+            >
+                <title>0 contributions on 2026-03-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="457.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.040s"
+            >
+                <title>0 contributions on 2026-03-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="457.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.060s"
+            >
+                <title>0 contributions on 2026-03-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="457.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.080s"
+            >
+                <title>0 contributions on 2026-03-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="457.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.100s"
+            >
+                <title>0 contributions on 2026-03-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="474.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.015s"
+            >
+                <title>0 contributions on 2026-03-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="474.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.035s"
+            >
+                <title>0 contributions on 2026-03-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="474.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.055s"
+            >
+                <title>0 contributions on 2026-03-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="474.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.075s"
+            >
+                <title>0 contributions on 2026-03-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="474.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.095s"
+            >
+                <title>0 contributions on 2026-03-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="474.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.115s"
+            >
+                <title>0 contributions on 2026-03-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="474.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.135s"
+            >
+                <title>0 contributions on 2026-03-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="491.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.050s"
+            >
+                <title>0 contributions on 2026-03-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="491.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.070s"
+            >
+                <title>0 contributions on 2026-03-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="491.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.090s"
+            >
+                <title>0 contributions on 2026-03-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="491.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.110s"
+            >
+                <title>0 contributions on 2026-03-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="491.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.130s"
+            >
+                <title>0 contributions on 2026-03-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="491.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.150s"
+            >
+                <title>0 contributions on 2026-03-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="491.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.170s"
+            >
+                <title>0 contributions on 2026-03-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="508.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.085s"
+            >
+                <title>0 contributions on 2026-03-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="508.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.105s"
+            >
+                <title>0 contributions on 2026-03-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="508.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.125s"
+            >
+                <title>0 contributions on 2026-03-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="508.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.145s"
+            >
+                <title>0 contributions on 2026-03-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="508.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.165s"
+            >
+                <title>0 contributions on 2026-03-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="508.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.185s"
+            >
+                <title>0 contributions on 2026-03-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="508.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.205s"
+            >
+                <title>0 contributions on 2026-03-31</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="525.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.120s"
+            >
+                <title>0 contributions on 2026-04-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="525.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.140s"
+            >
+                <title>0 contributions on 2026-04-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="525.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:1.160s"
+            >
+                <title>0 contributions on 2026-04-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="525.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.180s"
+            >
+                <title>0 contributions on 2026-04-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="525.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.200s"
+            >
+                <title>0 contributions on 2026-04-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="525.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.220s"
+            >
+                <title>0 contributions on 2026-04-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="525.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.240s"
+            >
+                <title>0 contributions on 2026-04-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="542.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.155s"
+            >
+                <title>0 contributions on 2026-04-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="542.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.175s"
+            >
+                <title>0 contributions on 2026-04-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="542.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.195s"
+            >
+                <title>0 contributions on 2026-04-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="542.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.215s"
+            >
+                <title>0 contributions on 2026-04-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="542.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.235s"
+            >
+                <title>0 contributions on 2026-04-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="542.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.255s"
+            >
+                <title>0 contributions on 2026-04-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="542.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.275s"
+            >
+                <title>0 contributions on 2026-04-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="559.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.190s"
+            >
+                <title>0 contributions on 2026-04-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="559.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.210s"
+            >
+                <title>0 contributions on 2026-04-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="559.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.230s"
+            >
+                <title>0 contributions on 2026-04-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="559.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.250s"
+            >
+                <title>0 contributions on 2026-04-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="559.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.270s"
+            >
+                <title>0 contributions on 2026-04-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="559.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.290s"
+            >
+                <title>0 contributions on 2026-04-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="559.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.310s"
+            >
+                <title>0 contributions on 2026-04-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="576.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.225s"
+            >
+                <title>0 contributions on 2026-04-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="576.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.245s"
+            >
+                <title>0 contributions on 2026-04-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="576.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.265s"
+            >
+                <title>0 contributions on 2026-04-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="576.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.285s"
+            >
+                <title>0 contributions on 2026-04-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="576.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.305s"
+            >
+                <title>0 contributions on 2026-04-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="576.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.325s"
+            >
+                <title>0 contributions on 2026-04-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="576.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.345s"
+            >
+                <title>0 contributions on 2026-04-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="593.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.260s"
+            >
+                <title>0 contributions on 2026-04-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="593.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.280s"
+            >
+                <title>0 contributions on 2026-04-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="593.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.300s"
+            >
+                <title>0 contributions on 2026-05-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="593.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.320s"
+            >
+                <title>0 contributions on 2026-05-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="593.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.340s"
+            >
+                <title>0 contributions on 2026-05-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="593.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.360s"
+            >
+                <title>0 contributions on 2026-05-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="593.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.380s"
+            >
+                <title>0 contributions on 2026-05-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="610.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.295s"
+            >
+                <title>0 contributions on 2026-05-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="610.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.315s"
+            >
+                <title>0 contributions on 2026-05-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="610.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.335s"
+            >
+                <title>0 contributions on 2026-05-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="610.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.355s"
+            >
+                <title>0 contributions on 2026-05-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="610.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.375s"
+            >
+                <title>0 contributions on 2026-05-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="610.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.395s"
+            >
+                <title>0 contributions on 2026-05-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="610.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.415s"
+            >
+                <title>0 contributions on 2026-05-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="627.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.330s"
+            >
+                <title>0 contributions on 2026-05-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="627.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.350s"
+            >
+                <title>0 contributions on 2026-05-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="627.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.370s"
+            >
+                <title>0 contributions on 2026-05-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="627.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.390s"
+            >
+                <title>0 contributions on 2026-05-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="627.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.410s"
+            >
+                <title>0 contributions on 2026-05-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="627.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.430s"
+            >
+                <title>0 contributions on 2026-05-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="627.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.450s"
+            >
+                <title>0 contributions on 2026-05-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="644.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.365s"
+            >
+                <title>0 contributions on 2026-05-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="644.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.385s"
+            >
+                <title>0 contributions on 2026-05-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="644.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.405s"
+            >
+                <title>0 contributions on 2026-05-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="644.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.425s"
+            >
+                <title>0 contributions on 2026-05-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="644.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.445s"
+            >
+                <title>0 contributions on 2026-05-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="644.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.465s"
+            >
+                <title>0 contributions on 2026-05-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="644.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.485s"
+            >
+                <title>0 contributions on 2026-05-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="661.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.400s"
+            >
+                <title>0 contributions on 2026-05-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="661.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.420s"
+            >
+                <title>0 contributions on 2026-05-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="661.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.440s"
+            >
+                <title>0 contributions on 2026-05-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="661.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.460s"
+            >
+                <title>0 contributions on 2026-05-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="661.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.480s"
+            >
+                <title>0 contributions on 2026-05-31</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="661.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.500s"
+            >
+                <title>0 contributions on 2026-06-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="661.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.520s"
+            >
+                <title>0 contributions on 2026-06-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="678.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.435s"
+            >
+                <title>0 contributions on 2026-06-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="678.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.455s"
+            >
+                <title>0 contributions on 2026-06-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="678.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.475s"
+            >
+                <title>0 contributions on 2026-06-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="678.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.495s"
+            >
+                <title>0 contributions on 2026-06-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="678.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.515s"
+            >
+                <title>0 contributions on 2026-06-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="678.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.535s"
+            >
+                <title>0 contributions on 2026-06-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="678.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.555s"
+            >
+                <title>0 contributions on 2026-06-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="695.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.470s"
+            >
+                <title>0 contributions on 2026-06-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="695.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.490s"
+            >
+                <title>0 contributions on 2026-06-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="695.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.510s"
+            >
+                <title>0 contributions on 2026-06-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="695.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.530s"
+            >
+                <title>0 contributions on 2026-06-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="695.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.550s"
+            >
+                <title>0 contributions on 2026-06-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="695.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.570s"
+            >
+                <title>0 contributions on 2026-06-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="695.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.590s"
+            >
+                <title>0 contributions on 2026-06-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="712.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.505s"
+            >
+                <title>0 contributions on 2026-06-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="712.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.525s"
+            >
+                <title>0 contributions on 2026-06-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="712.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:1.545s"
+            >
+                <title>0 contributions on 2026-06-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="712.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#26a641"
+                style="animation-delay:1.565s"
+            >
+                <title>0 contributions on 2026-06-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="712.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.585s"
+            >
+                <title>0 contributions on 2026-06-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="712.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.605s"
+            >
+                <title>0 contributions on 2026-06-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="712.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.625s"
+            >
+                <title>0 contributions on 2026-06-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="729.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.540s"
+            >
+                <title>0 contributions on 2026-06-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="729.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.560s"
+            >
+                <title>0 contributions on 2026-06-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="729.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#006d32"
+                style="animation-delay:1.580s"
+            >
+                <title>0 contributions on 2026-06-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="729.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.600s"
+            >
+                <title>0 contributions on 2026-06-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="729.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.620s"
+            >
+                <title>0 contributions on 2026-06-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="729.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.640s"
+            >
+                <title>0 contributions on 2026-06-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="729.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.660s"
+            >
+                <title>0 contributions on 2026-06-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="746.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.575s"
+            >
+                <title>0 contributions on 2026-07-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="746.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.595s"
+            >
+                <title>0 contributions on 2026-07-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="746.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.615s"
+            >
+                <title>0 contributions on 2026-07-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="746.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.635s"
+            >
+                <title>0 contributions on 2026-07-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="746.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.655s"
+            >
+                <title>0 contributions on 2026-07-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="746.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.675s"
+            >
+                <title>0 contributions on 2026-07-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="746.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.695s"
+            >
+                <title>0 contributions on 2026-07-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="763.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.610s"
+            >
+                <title>0 contributions on 2026-07-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="763.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.630s"
+            >
+                <title>0 contributions on 2026-07-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="763.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.650s"
+            >
+                <title>0 contributions on 2026-07-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="763.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.670s"
+            >
+                <title>0 contributions on 2026-07-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="763.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.690s"
+            >
+                <title>0 contributions on 2026-07-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="763.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.710s"
+            >
+                <title>0 contributions on 2026-07-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="763.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.730s"
+            >
+                <title>0 contributions on 2026-07-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="780.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:1.645s"
+            >
+                <title>0 contributions on 2026-07-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="780.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:1.665s"
+            >
+                <title>0 contributions on 2026-07-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="780.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.685s"
+            >
+                <title>0 contributions on 2026-07-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="780.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.705s"
+            >
+                <title>0 contributions on 2026-07-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="780.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.725s"
+            >
+                <title>0 contributions on 2026-07-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="780.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.745s"
+            >
+                <title>0 contributions on 2026-07-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="780.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.765s"
+            >
+                <title>0 contributions on 2026-07-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="797.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#26a641"
+                style="animation-delay:1.680s"
+            >
+                <title>0 contributions on 2026-07-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="797.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.700s"
+            >
+                <title>0 contributions on 2026-07-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="797.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.720s"
+            >
+                <title>0 contributions on 2026-07-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="797.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.740s"
+            >
+                <title>0 contributions on 2026-07-25</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="797.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.760s"
+            >
+                <title>0 contributions on 2026-07-26</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="797.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.780s"
+            >
+                <title>0 contributions on 2026-07-27</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="797.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:1.800s"
+            >
+                <title>0 contributions on 2026-07-28</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="814.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.715s"
+            >
+                <title>0 contributions on 2026-07-29</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="814.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.735s"
+            >
+                <title>0 contributions on 2026-07-30</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="814.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.755s"
+            >
+                <title>0 contributions on 2026-07-31</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="814.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.775s"
+            >
+                <title>0 contributions on 2026-08-01</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="814.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.795s"
+            >
+                <title>0 contributions on 2026-08-02</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="814.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.815s"
+            >
+                <title>0 contributions on 2026-08-03</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="814.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.835s"
+            >
+                <title>0 contributions on 2026-08-04</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="831.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.750s"
+            >
+                <title>0 contributions on 2026-08-05</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="831.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.770s"
+            >
+                <title>0 contributions on 2026-08-06</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="831.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.790s"
+            >
+                <title>0 contributions on 2026-08-07</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="831.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.810s"
+            >
+                <title>0 contributions on 2026-08-08</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="831.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.830s"
+            >
+                <title>0 contributions on 2026-08-09</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="831.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.850s"
+            >
+                <title>0 contributions on 2026-08-10</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="831.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.870s"
+            >
+                <title>0 contributions on 2026-08-11</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="848.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.785s"
+            >
+                <title>0 contributions on 2026-08-12</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="848.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.805s"
+            >
+                <title>0 contributions on 2026-08-13</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="848.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.825s"
+            >
+                <title>0 contributions on 2026-08-14</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="848.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.845s"
+            >
+                <title>0 contributions on 2026-08-15</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="848.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.865s"
+            >
+                <title>0 contributions on 2026-08-16</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="848.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.885s"
+            >
+                <title>0 contributions on 2026-08-17</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="848.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:1.905s"
+            >
+                <title>0 contributions on 2026-08-18</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="865.5"
+                y="22.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.820s"
+            >
+                <title>0 contributions on 2026-08-19</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="865.5"
+                y="39.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.840s"
+            >
+                <title>0 contributions on 2026-08-20</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="865.5"
+                y="56.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.860s"
+            >
+                <title>0 contributions on 2026-08-21</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="865.5"
+                y="73.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.880s"
+            >
+                <title>0 contributions on 2026-08-22</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="865.5"
+                y="90.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.900s"
+            >
+                <title>0 contributions on 2026-08-23</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="865.5"
+                y="107.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#161b22"
+                style="animation-delay:1.920s"
+            >
+                <title>0 contributions on 2026-08-24</title>
+            </rect>
+            
+
+            <rect
+                class="cell"
+                x="865.5"
+                y="124.0"
+                width="13"
+                height="13"
+                rx="3"
+                fill="#0e4429"
+                style="animation-delay:1.940s"
+            >
+                <title>0 contributions on 2026-08-25</title>
+            </rect>
+            
+
+        <text
+            x="24"
+            y="165"
+            class="stat"
+            font-size="12"
+        >
+            0 contributions
+        </text>
+
+        <text
+            x="190"
+            y="165"
+            class="text"
+            font-size="11"
+        >
+            Current streak: 0 days
+        </text>
+
+        <text
+            x="360"
+            y="165"
+            class="text"
+            font-size="11"
+        >
+            Longest streak: 0 days
+        </text>
+
+        <text
+            x="680"
+            y="165"
+            class="text"
+            font-size="10"
+        >
+            Less
+        </text>
+        
+
+            <rect
+                x="712"
+                y="155"
+                width="11"
+                height="11"
+                rx="2"
+                fill="#161b22"
+            />
+            
+
+            <rect
+                x="728"
+                y="155"
+                width="11"
+                height="11"
+                rx="2"
+                fill="#0e4429"
+            />
+            
+
+            <rect
+                x="744"
+                y="155"
+                width="11"
+                height="11"
+                rx="2"
+                fill="#006d32"
+            />
+            
+
+            <rect
+                x="760"
+                y="155"
+                width="11"
+                height="11"
+                rx="2"
+                fill="#26a641"
+            />
+            
+
+            <rect
+                x="776"
+                y="155"
+                width="11"
+                height="11"
+                rx="2"
+                fill="#39d353"
+            />
+            
+
+        <text
+            x="798"
+            y="165"
+            class="text"
+            font-size="10"
+        >
+            More
+        </text>
+
+        </svg>
+        
