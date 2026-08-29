@@ -1,6 +1,5 @@
 import json
 from pathlib import Path
-from datetime import datetime
 
 INPUT = Path("data/contributions.json")
 OUTPUT = Path("contrib-heatmap.svg")
@@ -32,10 +31,10 @@ def main():
 
     days = data["days"]
 
-    # Keep the latest 371 days = 53 weeks × 7 days.
+    # Keep latest 371 days = 53 weeks × 7 days
     days = days[-(COLS * ROWS):]
 
-    # Pad the beginning if necessary.
+    # Pad the beginning if necessary
     while len(days) < COLS * ROWS:
         days.insert(
             0,
@@ -46,7 +45,54 @@ def main():
             },
         )
 
+    # ---------------------------------------------------------
+    # GRID POSITION
+    # ---------------------------------------------------------
+
+    grid_width = COLS * (CELL + GAP) - GAP
+    grid_height = ROWS * (CELL + GAP) - GAP
+
+    start_x = (WIDTH - grid_width) / 2
+    start_y = 22
+
+    # ---------------------------------------------------------
+    # BUILD SNAKE PATH
+    #
+    # The snake moves across each row and changes direction
+    # at the end of every row.
+    # ---------------------------------------------------------
+
+    path_points = []
+
+    xs = [
+        start_x + column * (CELL + GAP) + CELL / 2
+        for column in range(COLS)
+    ]
+
+    ys = [
+        start_y + row * (CELL + GAP) + CELL / 2
+        for row in range(ROWS)
+    ]
+
+    for row in range(ROWS):
+        row_xs = xs if row % 2 == 0 else list(reversed(xs))
+
+        for x in row_xs:
+            path_points.append((x, ys[row]))
+
+    snake_path = (
+        f"M {path_points[0][0]:.1f},{path_points[0][1]:.1f} "
+        + " ".join(
+            f"L {x:.1f},{y:.1f}"
+            for x, y in path_points[1:]
+        )
+    )
+
     svg = []
+
+    # ---------------------------------------------------------
+    # SVG HEADER
+    # ---------------------------------------------------------
 
     svg.append(
         f'''<svg xmlns="http://www.w3.org/2000/svg"
@@ -88,16 +134,40 @@ def main():
                 font-family: "Courier New", monospace;
                 fill: #c9d1d9;
             }}
+
+            /* Snake */
+            .snake-body {{
+                fill: #26a641;
+            }}
+
+            .snake-head {{
+                fill: #39d353;
+            }}
+
+            .snake-eye {{
+                fill: #0d1117;
+            }}
+
+            .snake-tongue {{
+                stroke: #39d353;
+                stroke-width: 1.5;
+                stroke-linecap: round;
+            }}
         </style>
+
+        <!-- Invisible path used by the snake -->
+        <path
+            id="snakePath"
+            d="{snake_path}"
+            fill="none"
+            stroke="none"
+        />
         '''
     )
 
-    # Grid dimensions
-    grid_width = COLS * (CELL + GAP) - GAP
-    grid_height = ROWS * (CELL + GAP) - GAP
-
-    start_x = (WIDTH - grid_width) / 2
-    start_y = 22
+    # ---------------------------------------------------------
+    # CONTRIBUTION CELLS
+    # ---------------------------------------------------------
 
     for index, day in enumerate(days):
         column = index // ROWS
@@ -108,7 +178,7 @@ def main():
 
         level = int(day.get("level", 0))
 
-        # Protect against unexpected values.
+        # Protect against unexpected values
         level = max(0, min(level, len(PALETTE) - 1))
 
         delay = (column * 0.035) + (row * 0.02)
@@ -134,6 +204,108 @@ def main():
             </rect>
             '''
         )
+
+    # ---------------------------------------------------------
+    # SNAKE
+    # ---------------------------------------------------------
+
+    # Body segments.
+    # Each segment starts slightly later on the path,
+    # creating the appearance of a moving snake.
+    snake_segments = 8
+
+    for segment in range(snake_segments, 0, -1):
+        delay = -(segment * 0.22)
+
+        svg.append(
+            f'''
+            <g
+                class="snake-body"
+                opacity="{0.45 + (segment / snake_segments) * 0.5:.2f}"
+            >
+                <circle
+                    r="{4.0 if segment > 2 else 4.3}"
+                >
+                    <animateMotion
+                        dur="24s"
+                        begin="{delay}s"
+                        repeatCount="indefinite"
+                        rotate="auto"
+                    >
+                        <mpath href="#snakePath" />
+                    </animateMotion>
+                </circle>
+            </g>
+            '''
+        )
+
+    # Snake head
+    svg.append(
+        '''
+        <g>
+            <animateMotion
+                dur="24s"
+                begin="0s"
+                repeatCount="indefinite"
+                rotate="auto"
+            >
+                <mpath href="#snakePath" />
+            </animateMotion>
+
+            <!-- Head -->
+            <circle
+                class="snake-head"
+                cx="0"
+                cy="0"
+                r="5"
+            />
+
+            <!-- Eyes -->
+            <circle
+                class="snake-eye"
+                cx="-1.8"
+                cy="-1.7"
+                r="0.8"
+            />
+
+            <circle
+                class="snake-eye"
+                cx="1.8"
+                cy="-1.7"
+                r="0.8"
+            />
+
+            <!-- Tongue -->
+            <line
+                class="snake-tongue"
+                x1="0"
+                y1="4"
+                x2="0"
+                y2="7"
+            />
+
+            <line
+                class="snake-tongue"
+                x1="0"
+                y1="7"
+                x2="-1.5"
+                y2="8.5"
+            />
+
+            <line
+                class="snake-tongue"
+                x1="0"
+                y1="7"
+                x2="1.5"
+                y2="8.5"
+            />
+        </g>
+        '''
+    )
+
+    # ---------------------------------------------------------
+    # STATS / FOOTER
+    # ---------------------------------------------------------
 
     total = data.get("total_contributions", 0)
     current = data.get("current_streak", 0)
@@ -181,7 +353,10 @@ def main():
         '''
     )
 
-    # Legend
+    # ---------------------------------------------------------
+    # LEGEND
+    # ---------------------------------------------------------
+
     legend_x = 712
 
     for i, color in enumerate(PALETTE):
