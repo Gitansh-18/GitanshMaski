@@ -4,13 +4,12 @@ from pathlib import Path
 INPUT = Path("data/contributions.json")
 OUTPUT = Path("contrib-heatmap.svg")
 
-# GitHub-style contribution colors
 PALETTE = [
-    "#161b22",  # 0
-    "#0e4429",  # 1
-    "#006d32",  # 2
-    "#26a641",  # 3
-    "#39d353",  # 4
+    "#161b22",
+    "#0e4429",
+    "#006d32",
+    "#26a641",
+    "#39d353",
 ]
 
 CELL = 13
@@ -30,11 +29,8 @@ def main():
     data = json.loads(INPUT.read_text(encoding="utf-8"))
 
     days = data["days"]
-
-    # Keep latest 371 days = 53 weeks × 7 days
     days = days[-(COLS * ROWS):]
 
-    # Pad the beginning if necessary
     while len(days) < COLS * ROWS:
         days.insert(
             0,
@@ -46,7 +42,7 @@ def main():
         )
 
     # ---------------------------------------------------------
-    # GRID POSITION
+    # GRID
     # ---------------------------------------------------------
 
     grid_width = COLS * (CELL + GAP) - GAP
@@ -56,37 +52,40 @@ def main():
     start_y = 22
 
     # ---------------------------------------------------------
-    # BUILD SNAKE PATH
+    # SNAKE PATH
     #
-    # The snake moves across each row and changes direction
-    # at the end of every row.
+    # Snake moves left -> right on row 1,
+    # right -> left on row 2,
+    # left -> right on row 3, etc.
     # ---------------------------------------------------------
 
-    path_points = []
-
-    xs = [
-        start_x + column * (CELL + GAP) + CELL / 2
-        for column in range(COLS)
-    ]
-
-    ys = [
-        start_y + row * (CELL + GAP) + CELL / 2
-        for row in range(ROWS)
-    ]
+    path_x = []
+    path_y = []
 
     for row in range(ROWS):
-        row_xs = xs if row % 2 == 0 else list(reversed(xs))
 
-        for x in row_xs:
-            path_points.append((x, ys[row]))
+        columns = range(COLS)
 
-    snake_path = (
-        f"M {path_points[0][0]:.1f},{path_points[0][1]:.1f} "
-        + " ".join(
-            f"L {x:.1f},{y:.1f}"
-            for x, y in path_points[1:]
-        )
-    )
+        if row % 2 == 1:
+            columns = reversed(range(COLS))
+
+        for column in columns:
+
+            x = start_x + column * (CELL + GAP) + CELL / 2
+            y = start_y + row * (CELL + GAP) + CELL / 2
+
+            path_x.append(f"{x:.1f}")
+            path_y.append(f"{y:.1f}")
+
+    # Key times
+    key_times = [
+        f"{i / (len(path_x) - 1):.5f}"
+        for i in range(len(path_x))
+    ]
+
+    values_x = ";".join(path_x)
+    values_y = ";".join(path_y)
+    times = ";".join(key_times)
 
     svg = []
 
@@ -108,6 +107,7 @@ def main():
         />
 
         <style>
+
             .cell {{
                 opacity: 0;
                 animation: reveal 0.45s ease-out forwards;
@@ -135,7 +135,6 @@ def main():
                 fill: #c9d1d9;
             }}
 
-            /* Snake */
             .snake-body {{
                 fill: #26a641;
             }}
@@ -148,20 +147,7 @@ def main():
                 fill: #0d1117;
             }}
 
-            .snake-tongue {{
-                stroke: #39d353;
-                stroke-width: 1.5;
-                stroke-linecap: round;
-            }}
         </style>
-
-        <!-- Invisible path used by the snake -->
-        <path
-            id="snakePath"
-            d="{snake_path}"
-            fill="none"
-            stroke="none"
-        />
         '''
     )
 
@@ -170,6 +156,7 @@ def main():
     # ---------------------------------------------------------
 
     for index, day in enumerate(days):
+
         column = index // ROWS
         row = index % ROWS
 
@@ -178,8 +165,10 @@ def main():
 
         level = int(day.get("level", 0))
 
-        # Protect against unexpected values
-        level = max(0, min(level, len(PALETTE) - 1))
+        level = max(
+            0,
+            min(level, len(PALETTE) - 1)
+        )
 
         delay = (column * 0.035) + (row * 0.02)
 
@@ -206,105 +195,90 @@ def main():
         )
 
     # ---------------------------------------------------------
-    # SNAKE
+    # SNAKE BODY
     # ---------------------------------------------------------
 
-    # Body segments.
-    # Each segment starts slightly later on the path,
-    # creating the appearance of a moving snake.
-    snake_segments = 8
+    body_segments = 9
 
-    for segment in range(snake_segments, 0, -1):
-        delay = -(segment * 0.22)
+    for segment in range(body_segments, 0, -1):
+
+        opacity = 0.35 + (
+            segment / body_segments
+        ) * 0.5
+
+        delay = -(segment * 0.12)
 
         svg.append(
             f'''
-            <g
+            <circle
                 class="snake-body"
-                opacity="{0.45 + (segment / snake_segments) * 0.5:.2f}"
+                r="4"
+                opacity="{opacity:.2f}"
             >
-                <circle
-                    r="{4.0 if segment > 2 else 4.3}"
-                >
-                    <animateMotion
-                        dur="24s"
-                        begin="{delay}s"
-                        repeatCount="indefinite"
-                        rotate="auto"
-                    >
-                        <mpath href="#snakePath" />
-                    </animateMotion>
-                </circle>
-            </g>
+
+                <animate
+                    attributeName="cx"
+                    values="{values_x}"
+                    keyTimes="{times}"
+                    dur="30s"
+                    begin="{delay:.2f}s"
+                    repeatCount="indefinite"
+                    calcMode="linear"
+                />
+
+                <animate
+                    attributeName="cy"
+                    values="{values_y}"
+                    keyTimes="{times}"
+                    dur="30s"
+                    begin="{delay:.2f}s"
+                    repeatCount="indefinite"
+                    calcMode="linear"
+                />
+
+            </circle>
             '''
         )
 
-    # Snake head
-    svg.append(
-        '''
-        <g>
-            <animateMotion
-                dur="24s"
-                begin="0s"
-                repeatCount="indefinite"
-                rotate="auto"
-            >
-                <mpath href="#snakePath" />
-            </animateMotion>
+    # ---------------------------------------------------------
+    # SNAKE HEAD
+    # ---------------------------------------------------------
 
-            <!-- Head -->
+    svg.append(
+        f'''
+        <g>
+
             <circle
                 class="snake-head"
-                cx="0"
-                cy="0"
                 r="5"
-            />
+            >
 
-            <!-- Eyes -->
-            <circle
-                class="snake-eye"
-                cx="-1.8"
-                cy="-1.7"
-                r="0.8"
-            />
+                <animate
+                    attributeName="cx"
+                    values="{values_x}"
+                    keyTimes="{times}"
+                    dur="30s"
+                    repeatCount="indefinite"
+                    calcMode="linear"
+                />
 
-            <circle
-                class="snake-eye"
-                cx="1.8"
-                cy="-1.7"
-                r="0.8"
-            />
+                <animate
+                    attributeName="cy"
+                    values="{values_y}"
+                    keyTimes="{times}"
+                    dur="30s"
+                    repeatCount="indefinite"
+                    calcMode="linear"
+                />
 
-            <!-- Tongue -->
-            <line
-                class="snake-tongue"
-                x1="0"
-                y1="4"
-                x2="0"
-                y2="7"
-            />
+            </circle>
 
-            <line
-                class="snake-tongue"
-                x1="0"
-                y1="7"
-                x2="-1.5"
-                y2="8.5"
-            />
-
-            <line
-                class="snake-tongue"
-                x1="0"
-                y1="7"
-                x2="1.5"
-                y2="8.5"
-            />
         </g>
         '''
     )
 
     # ---------------------------------------------------------
-    # STATS / FOOTER
+    # FOOTER
     # ---------------------------------------------------------
 
     total = data.get("total_contributions", 0)
@@ -360,6 +334,7 @@ def main():
     legend_x = 712
 
     for i, color in enumerate(PALETTE):
+
         svg.append(
             f'''
             <rect
