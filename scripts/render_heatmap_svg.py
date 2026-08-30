@@ -7,13 +7,13 @@ INPUT = Path("data/contributions.json")
 SNAKE = Path("snake.png")
 OUTPUT = Path("contrib-heatmap.svg")
 
-# GitHub-style contribution colors
+# GitHub contribution colors
 PALETTE = [
-    "#161b22",  # 0
-    "#0e4429",  # 1
-    "#006d32",  # 2
-    "#26a641",  # 3
-    "#39d353",  # 4
+    "#161b22",
+    "#0e4429",
+    "#006d32",
+    "#26a641",
+    "#39d353",
 ]
 
 # ---------------------------------------------------------
@@ -22,7 +22,6 @@ PALETTE = [
 
 CELL = 13
 GAP = 4
-
 STEP = CELL + GAP
 
 COLS = 53
@@ -41,89 +40,36 @@ START_Y = 22
 # SNAKE
 # ---------------------------------------------------------
 
-# Approximately two contribution cells long.
-SNAKE_WIDTH = 34
-SNAKE_HEIGHT = 17
+# Around 2 contribution cells wide.
+SNAKE_WIDTH = 30
+SNAKE_HEIGHT = 15
 
-# How many random grid positions the snake visits.
-# Higher = more wandering before the animation repeats.
-PATH_LENGTH = 450
+# Number of random grid moves in one animation.
+MOVES = 500
 
-# Animation duration.
-DURATION = 55
+# Total animation duration.
+DURATION = 60
 
 
 def load_snake():
-    """Read snake.png and embed it directly into the SVG."""
 
     if not SNAKE.exists():
         raise FileNotFoundError(
-            f"Could not find {SNAKE}. "
-            f"Put snake.png in the repository root."
+            "snake.png not found. "
+            "Put snake.png in the GitanshMaski root folder."
         )
 
-    image_data = SNAKE.read_bytes()
-    encoded = base64.b64encode(image_data).decode("ascii")
+    encoded = base64.b64encode(
+        SNAKE.read_bytes()
+    ).decode("ascii")
 
     return f"data:image/png;base64,{encoded}"
 
 
-def random_walk():
+def grid_position(column, row):
     """
-    Generate a completely random walk through the 53 x 7 grid.
-
-    The snake can move:
-        UP
-        DOWN
-        LEFT
-        RIGHT
-
-    There is no predefined route.
+    Return the CENTER of a contribution cell.
     """
-
-    rng = random.SystemRandom()
-
-    # Random starting position.
-    column = rng.randrange(COLS)
-    row = rng.randrange(ROWS)
-
-    path = [(column, row)]
-
-    directions = [
-        (1, 0),    # right
-        (-1, 0),   # left
-        (0, 1),    # down
-        (0, -1),   # up
-    ]
-
-    for _ in range(PATH_LENGTH - 1):
-
-        possible = []
-
-        for dx, dy in directions:
-
-            new_column = column + dx
-            new_row = row + dy
-
-            # Stay inside the heatmap.
-            if (
-                0 <= new_column < COLS
-                and 0 <= new_row < ROWS
-            ):
-                possible.append(
-                    (new_column, new_row)
-                )
-
-        # Completely random valid direction.
-        column, row = rng.choice(possible)
-
-        path.append((column, row))
-
-    return path
-
-
-def grid_to_screen(column, row):
-    """Convert grid coordinates to SVG coordinates."""
 
     x = (
         START_X
@@ -140,33 +86,102 @@ def grid_to_screen(column, row):
     return x, y
 
 
-def make_motion_path(points):
+def random_snake_walk():
     """
-    Convert random grid positions into an SVG path.
+    Completely random movement.
 
-    The path follows the center of each contribution cell.
+    The snake can move:
+
+        UP
+        DOWN
+        LEFT
+        RIGHT
+
+    It never leaves the heatmap.
     """
+
+    rng = random.SystemRandom()
+
+    column = rng.randrange(COLS)
+    row = rng.randrange(ROWS)
+
+    points = [(column, row)]
+
+    previous_direction = None
+
+    directions = [
+        ("right", 1, 0),
+        ("left", -1, 0),
+        ("down", 0, 1),
+        ("up", 0, -1),
+    ]
+
+    for _ in range(MOVES - 1):
+
+        valid = []
+
+        for name, dx, dy in directions:
+
+            new_column = column + dx
+            new_row = row + dy
+
+            if (
+                0 <= new_column < COLS
+                and 0 <= new_row < ROWS
+            ):
+                valid.append(
+                    (name, dx, dy)
+                )
+
+        # Prefer changing direction sometimes.
+        # This prevents extremely long straight lines.
+        if previous_direction and len(valid) > 1:
+
+            changed = [
+                direction
+                for direction in valid
+                if direction[0] != previous_direction
+            ]
+
+            # 65% chance of changing direction.
+            if rng.random() < 0.65:
+                valid = changed
+
+        direction = rng.choice(valid)
+
+        name, dx, dy = direction
+
+        column += dx
+        row += dy
+
+        previous_direction = name
+
+        points.append(
+            (column, row)
+        )
+
+    return points
+
+
+def create_motion_path(points):
 
     coordinates = [
-        grid_to_screen(column, row)
+        grid_position(column, row)
         for column, row in points
     ]
 
-    if not coordinates:
-        return ""
-
     first_x, first_y = coordinates[0]
 
-    path = [
+    commands = [
         f"M {first_x:.1f} {first_y:.1f}"
     ]
 
     for x, y in coordinates[1:]:
-        path.append(
+        commands.append(
             f"L {x:.1f} {y:.1f}"
         )
 
-    return " ".join(path)
+    return " ".join(commands)
 
 
 def main():
@@ -177,15 +192,16 @@ def main():
         )
 
     data = json.loads(
-        INPUT.read_text(encoding="utf-8")
+        INPUT.read_text(
+            encoding="utf-8"
+        )
     )
 
     days = data["days"]
 
-    # Latest 371 days = 53 weeks × 7 days.
+    # 53 weeks × 7 days
     days = days[-(COLS * ROWS):]
 
-    # Pad if necessary.
     while len(days) < COLS * ROWS:
 
         days.insert(
@@ -194,23 +210,23 @@ def main():
                 "date": "",
                 "count": 0,
                 "level": 0,
-            },
+            }
         )
 
     # -----------------------------------------------------
-    # LOAD SNAKE
+    # SNAKE DATA
     # -----------------------------------------------------
 
-    snake_data = load_snake()
+    snake_image = load_snake()
 
-    # -----------------------------------------------------
-    # GENERATE RANDOM SNAKE ROUTE
-    # -----------------------------------------------------
+    snake_points = random_snake_walk()
 
-    snake_path = random_walk()
+    motion_path = create_motion_path(
+        snake_points
+    )
 
-    motion_path = make_motion_path(
-        snake_path
+    first_x, first_y = grid_position(
+        *snake_points[0]
     )
 
     # -----------------------------------------------------
@@ -221,65 +237,65 @@ def main():
 
     svg.append(
         f'''<svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="{WIDTH}"
-        height="{HEIGHT}"
-        viewBox="0 0 {WIDTH} {HEIGHT}">
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="{WIDTH}"
+height="{HEIGHT}"
+viewBox="0 0 {WIDTH} {HEIGHT}">
 
-        <rect
-            width="100%"
-            height="100%"
-            rx="12"
-            fill="#0d1117"
-        />
+<rect
+width="100%"
+height="100%"
+rx="12"
+fill="#0d1117"
+/>
 
-        <style>
+<style>
 
-            .cell {{
-                opacity: 0;
-                animation:
-                    reveal 0.45s
-                    ease-out
-                    forwards;
-            }}
+.cell {{
+    opacity: 0;
+    animation:
+        reveal 0.45s
+        ease-out
+        forwards;
+}}
 
-            @keyframes reveal {{
+@keyframes reveal {{
 
-                from {{
-                    opacity: 0;
-                    transform:
-                        translateY(-10px);
-                }}
+    from {{
+        opacity: 0;
+        transform:
+            translateY(-10px);
+    }}
 
-                to {{
-                    opacity: 1;
-                    transform:
-                        translateY(0);
-                }}
+    to {{
+        opacity: 1;
+        transform:
+            translateY(0);
+    }}
 
-            }}
+}}
 
-            .text {{
-                font-family:
-                    Arial,
-                    sans-serif;
-                fill: #8b949e;
-            }}
+.text {{
+    font-family:
+        Arial,
+        sans-serif;
+    fill: #8b949e;
+}}
 
-            .stat {{
-                font-family:
-                    "Courier New",
-                    monospace;
-                fill: #c9d1d9;
-            }}
+.stat {{
+    font-family:
+        "Courier New",
+        monospace;
+    fill: #c9d1d9;
+}}
 
-        </style>
-        '''
+</style>
+'''
     )
 
     # -----------------------------------------------------
-    # CONTRIBUTION GRID
+    # CONTRIBUTION CELLS
     # -----------------------------------------------------
 
     for index, day in enumerate(days):
@@ -287,15 +303,8 @@ def main():
         column = index // ROWS
         row = index % ROWS
 
-        x = (
-            START_X
-            + column * STEP
-        )
-
-        y = (
-            START_Y
-            + row * STEP
-        )
+        x = START_X + column * STEP
+        y = START_Y + row * STEP
 
         level = int(
             day.get("level", 0)
@@ -331,34 +340,31 @@ def main():
 
         svg.append(
             f'''
-            <rect
-                class="cell"
-                x="{x:.1f}"
-                y="{y:.1f}"
-                width="{CELL}"
-                height="{CELL}"
-                rx="3"
-                fill="{PALETTE[level]}"
-                style="
-                    animation-delay:
-                    {delay:.3f}s
-                "
-            >
-                <title>
-                    {title}
-                </title>
-            </rect>
-            '''
+<rect
+class="cell"
+x="{x:.1f}"
+y="{y:.1f}"
+width="{CELL}"
+height="{CELL}"
+rx="3"
+fill="{PALETTE[level]}"
+style="animation-delay:{delay:.3f}s">
+
+<title>{title}</title>
+
+</rect>
+'''
         )
 
     # -----------------------------------------------------
     # SNAKE
     # -----------------------------------------------------
 
-    # Start the snake centered on the first grid cell.
-    first_x, first_y = grid_to_screen(
-        *snake_path[0]
-    )
+    # IMPORTANT:
+    # The image is positioned by its CENTER.
+    #
+    # This prevents the snake from being pushed
+    # outside the heatmap when it reaches an edge.
 
     snake_x = (
         first_x
@@ -372,25 +378,27 @@ def main():
 
     svg.append(
         f'''
-        <image
-            x="{snake_x:.1f}"
-            y="{snake_y:.1f}"
-            width="{SNAKE_WIDTH}"
-            height="{SNAKE_HEIGHT}"
-            preserveAspectRatio="xMidYMid meet"
-            href="{snake_data}"
-            xlink:href="{snake_data}">
+<!-- RANDOM ROAMING SNAKE -->
 
-            <animateMotion
-                dur="{DURATION}s"
-                begin="0s"
-                repeatCount="indefinite"
-                rotate="auto"
-                path="{motion_path}"
-            />
+<image
+x="{snake_x:.1f}"
+y="{snake_y:.1f}"
+width="{SNAKE_WIDTH}"
+height="{SNAKE_HEIGHT}"
+href="{snake_image}"
+xlink:href="{snake_image}"
+preserveAspectRatio="none">
 
-        </image>
-        '''
+<animateMotion
+dur="{DURATION}s"
+begin="0s"
+repeatCount="indefinite"
+rotate="auto"
+path="{motion_path}"
+/>
+
+</image>
+'''
     )
 
     # -----------------------------------------------------
@@ -420,40 +428,46 @@ def main():
 
     svg.append(
         f'''
-        <text
-            x="24"
-            y="{footer_y}"
-            class="stat"
-            font-size="12">
-            {total:,} contributions
-        </text>
+<text
+x="24"
+y="{footer_y}"
+class="stat"
+font-size="12">
 
-        <text
-            x="190"
-            y="{footer_y}"
-            class="text"
-            font-size="11">
-            Current streak:
-            {current} days
-        </text>
+{total:,} contributions
 
-        <text
-            x="360"
-            y="{footer_y}"
-            class="text"
-            font-size="11">
-            Longest streak:
-            {longest} days
-        </text>
+</text>
 
-        <text
-            x="680"
-            y="{footer_y}"
-            class="text"
-            font-size="10">
-            Less
-        </text>
-        '''
+<text
+x="190"
+y="{footer_y}"
+class="text"
+font-size="11">
+
+Current streak: {current} days
+
+</text>
+
+<text
+x="360"
+y="{footer_y}"
+class="text"
+font-size="11">
+
+Longest streak: {longest} days
+
+</text>
+
+<text
+x="680"
+y="{footer_y}"
+class="text"
+font-size="10">
+
+Less
+
+</text>
+'''
     )
 
     # -----------------------------------------------------
@@ -466,38 +480,40 @@ def main():
 
         svg.append(
             f'''
-            <rect
-                x="{legend_x + i * 16}"
-                y="{footer_y - 10}"
-                width="11"
-                height="11"
-                rx="2"
-                fill="{color}"
-            />
-            '''
+<rect
+x="{legend_x + i * 16}"
+y="{footer_y - 10}"
+width="11"
+height="11"
+rx="2"
+fill="{color}"
+/>
+'''
         )
 
     svg.append(
         f'''
-        <text
-            x="{legend_x + 86}"
-            y="{footer_y}"
-            class="text"
-            font-size="10">
-            More
-        </text>
+<text
+x="{legend_x + 86}"
+y="{footer_y}"
+class="text"
+font-size="10">
 
-        </svg>
-        '''
+More
+
+</text>
+
+</svg>
+'''
     )
 
     # -----------------------------------------------------
-    # WRITE SVG
+    # WRITE
     # -----------------------------------------------------
 
     OUTPUT.write_text(
         "\n".join(svg),
-        encoding="utf-8",
+        encoding="utf-8"
     )
 
     print(
@@ -505,7 +521,7 @@ def main():
     )
 
     print(
-        f"Snake route: {PATH_LENGTH} random positions"
+        f"Random snake moves: {MOVES}"
     )
 
 
