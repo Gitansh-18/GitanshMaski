@@ -1,115 +1,176 @@
 from pathlib import Path
+import base64
+import io
+
+import cv2
+import numpy as np
 from PIL import Image
 
 
 INPUT = Path("source-prepped.png")
 OUTPUT = Path("gitansh-ascii.svg")
 
-# Bright -> dark
-RAMP = " .`:-=+*cs#%@"
-
-# ASCII dimensions
-COLS = 100
-ROWS = 53
-
-# Character dimensions
-CHAR_W = 7
-CHAR_H = 12
-
-TEXT_COLOR = "#b8c0c8"
+WIDTH = 420
+HEIGHT = 428
 
 
-def brightness_to_char(value):
-    # White = sparse character
-    # Black = dense character
-    index = int((255 - value) / 255 * (len(RAMP) - 1))
-    return RAMP[index]
+def make_cartoon(image):
+    """Convert the prepared image into a clean cartoon-style image."""
+
+    image_np = np.array(image.convert("RGB"))
+
+    # PIL RGB -> OpenCV BGR
+    img = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
+
+    # Smooth the image while preserving important edges
+    smooth = img.copy()
+
+    for _ in range(2):
+        smooth = cv2.bilateralFilter(
+            smooth,
+            d=9,
+            sigmaColor=75,
+            sigmaSpace=75
+        )
+
+    # Reduce the number of colors
+    data = smooth.reshape((-1, 3)).astype(np.float32)
+
+    K = 10
+
+    criteria = (
+        cv2.TERM_CRITERIA_EPS
+        + cv2.TERM_CRITERIA_MAX_ITER,
+        30,
+        1.0
+    )
+
+    _, labels, centers = cv2.kmeans(
+        data,
+        K,
+        None,
+        criteria,
+        5,
+        cv2.KMEANS_PP_CENTERS
+    )
+
+    centers = np.uint8(centers)
+
+    cartoon = centers[labels.flatten()]
+    cartoon = cartoon.reshape(smooth.shape)
+
+    # Detect facial/clothing outlines
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    gray = cv2.medianBlur(gray, 5)
+
+    edges = cv2.adaptiveThreshold(
+        gray,
+        255,
+        cv2.ADAPTIVE_THRESH_MEAN_C,
+        cv2.THRESH_BINARY,
+        9,
+        4
+    )
+
+    # Combine simplified colors with outlines
+    cartoon = cv2.bitwise_and(
+        cartoon,
+        cartoon,
+        mask=edges
+    )
+
+    # Slightly boost color
+    hsv = cv2.cvtColor(
+        cartoon,
+        cv2.COLOR_BGR2HSV
+    )
+
+    hsv[:, :, 1] = np.clip(
+        hsv[:, :, 1].astype(np.float32) * 1.15,
+        0,
+        255
+    ).astype(np.uint8)
+
+    cartoon = cv2.cvtColor(
+        hsv,
+        cv2.COLOR_HSV2BGR
+    )
+
+    return Image.fromarray(
+        cv2.cvtColor(
+            cartoon,
+            cv2.COLOR_BGR2RGB
+        )
+    )
+
+
+def image_to_base64(image):
+
+    buffer = io.BytesIO()
+
+    image.save(
+        buffer,
+        format="PNG",
+        optimize=True
+    )
+
+    return base64.b64encode(
+        buffer.getvalue()
+    ).decode("utf-8")
 
 
 def main():
+
     if not INPUT.exists():
-        raise FileNotFoundError(f"Could not find {INPUT}")
+        raise FileNotFoundError(
+            f"Could not find {INPUT}"
+        )
 
     print("Loading preprocessed image...")
 
-    image = Image.open(INPUT).convert("L")
+    image = Image.open(INPUT).convert("RGB")
 
-    # Resize while preserving the intended ASCII proportions.
-    image = image.resize((COLS, ROWS))
-
-    width = COLS * CHAR_W
-    height = ROWS * CHAR_H
-
-    print("Converting image to ASCII...")
-
-    rows = []
-
-    for y in range(ROWS):
-        chars = []
-
-        for x in range(COLS):
-            brightness = image.getpixel((x, y))
-            chars.append(brightness_to_char(brightness))
-
-        rows.append("".join(chars))
-
-    print("Building animated SVG...")
-
-    svg = []
-
-    svg.append(
-        f'''<svg xmlns="http://www.w3.org/2000/svg"
-        width="{width}"
-        height="{height}"
-        viewBox="0 0 {width} {height}">
-
-        <rect width="100%" height="100%" fill="white"/>
-
-        <style>
-            .ascii {{
-                font-family: "Courier New", monospace;
-                font-size: {CHAR_H}px;
-                fill: {TEXT_COLOR};
-                white-space: pre;
-            }}
-
-            .row {{
-                opacity: 0;
-                animation: reveal 0.08s ease-out forwards;
-            }}
-
-            @keyframes reveal {{
-                from {{
-                    opacity: 0;
-                    transform: translateX(-20px);
-                }}
-
-                to {{
-                    opacity: 1;
-                    transform: translateX(0);
-                }}
-            }}
-        </style>
-        '''
+    # Resize to match your existing profile image size
+    image = image.resize(
+        (WIDTH, HEIGHT),
+        Image.Resampling.LANCZOS
     )
 
-    for y, row in enumerate(rows):
-        delay = y * 0.045
+    print("Creating cartoon effect...")
 
-        svg.append(
-            f'''
-            <text
-                x="0"
-                y="{(y + 1) * CHAR_H}"
-                class="ascii row"
-                style="animation-delay:{delay:.3f}s"
-            >{row}</text>
-            '''
-        )
+    cartoon = make_cartoon(image)
 
-    svg.append("</svg>")
+    print("Embedding cartoon into SVG...")
 
-    OUTPUT.write_text("\n".join(svg), encoding="utf-8")
+    image_data = image_to_base64(cartoon)
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
+width="{WIDTH}"
+height="{HEIGHT}"
+viewBox="0 0 {WIDTH} {HEIGHT}">
+
+<rect
+width="100%"
+height="100%"
+fill="white"
+/>
+
+<image
+href="data:image/png;base64,{image_data}"
+x="0"
+y="0"
+width="{WIDTH}"
+height="{HEIGHT}"
+preserveAspectRatio="xMidYMid meet"
+/>
+
+</svg>
+'''
+
+    OUTPUT.write_text(
+        svg,
+        encoding="utf-8"
+    )
 
     print(f"Done: {OUTPUT}")
 
