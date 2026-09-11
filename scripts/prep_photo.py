@@ -1,7 +1,5 @@
 from pathlib import Path
 
-import cv2
-import numpy as np
 from PIL import Image
 from rembg import remove
 
@@ -15,32 +13,34 @@ def main():
         raise FileNotFoundError(f"Could not find {INPUT}")
 
     print("Loading photo...")
+
     original = Image.open(INPUT).convert("RGBA")
 
     print("Removing background...")
+
     foreground = remove(original).convert("RGBA")
 
-    # White background
-    white = Image.new("RGBA", foreground.size, (255, 255, 255, 255))
-
-    # Composite the subject onto white
-    composited = Image.alpha_composite(white, foreground)
-
-    # Convert to grayscale
-    gray = np.array(composited.convert("L"))
-
-    # Improve local contrast using CLAHE
-    print("Enhancing contrast...")
-    clahe = cv2.createCLAHE(
-        clipLimit=2.0,
-        tileGridSize=(8, 8)
+    # Create a clean white background
+    background = Image.new(
+        "RGBA",
+        foreground.size,
+        (255, 255, 255, 255)
     )
 
-    enhanced = clahe.apply(gray)
+    # Put the subject on the background
+    composited = Image.alpha_composite(
+        background,
+        foreground
+    )
 
-    # Keep the image as PNG
-    result = Image.fromarray(enhanced, mode="L")
-    result.save(OUTPUT)
+    # Keep the original colors
+    result = composited.convert("RGB")
+
+    result.save(
+        OUTPUT,
+        format="PNG",
+        optimize=True
+    )
 
     print(f"Done: {OUTPUT}")
 
